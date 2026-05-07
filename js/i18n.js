@@ -1,7 +1,7 @@
 const translations = {
   ko: {
     "meta.title": "Alfred · ETICAT+ - 커피박 업사이클링 고양이 모래",
-    "meta.description": "주식회사 알프래드 - 커피박 업사이클링 기술로 만든 친환경 고양이 모래 ETICAT+, 특수동물 베딩 REPTICAT",
+    "meta.description": "주식회사 알프래드 - 커피박 업사이클링 기술로 만든 친환경 고양이 모래 ETICAT+, 특수동물 베딩 REPTIQUETTE",
 
     "nav.about": "회사 소개",
     "nav.story": "기술",
@@ -50,8 +50,8 @@ const translations = {
     "product.p1.stat3": "2025 매출",
 
     "product.p2.tag": "특수동물 베딩 · 신규 사업 (2025)",
-    "product.p2.name": "REPTICAT",
-    "product.p2.subtitle": "렙티캣 · Exotic Pet Healthcare Bedding",
+    "product.p2.name": "REPTIQUETTE",
+    "product.p2.subtitle": "렙티켓 · 100% 천연 펠렛형 바닥재",
     "product.p2.feat1.title": "Safety — 먹어도 안전",
     "product.p2.feat1.body": "카페인 99% 제거, 파충류 섭취 시 용해되어 장폐색 위험 제로",
     "product.p2.feat2.title": "Function — 고기능 성능",
@@ -92,7 +92,7 @@ const translations = {
   },
   en: {
     "meta.title": "Alfred · ETICAT+ - Coffee-Upcycled Cat Litter",
-    "meta.description": "Alfred Co., Ltd. - Eco-friendly cat litter ETICAT+ and exotic-pet bedding REPTICAT, made by upcycling coffee grounds and oyster shells.",
+    "meta.description": "Alfred Co., Ltd. - Eco-friendly cat litter ETICAT+ and exotic-pet bedding REPTIQUETTE, made by upcycling coffee grounds and oyster shells.",
 
     "nav.about": "About",
     "nav.story": "Technology",
@@ -141,7 +141,7 @@ const translations = {
     "product.p1.stat3": "2025 Revenue",
 
     "product.p2.tag": "Exotic Pet Bedding · New (2025)",
-    "product.p2.name": "REPTICAT",
+    "product.p2.name": "REPTIQUETTE",
     "product.p2.subtitle": "Exotic Pet Healthcare Bedding",
     "product.p2.feat1.title": "Safety — Edible-Safe",
     "product.p2.feat1.body": "99% caffeine removed. Dissolves if ingested by reptiles — zero risk of intestinal blockage.",
