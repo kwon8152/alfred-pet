@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" data-i18n="meta.description" content="주식회사 알프래드 - 커피박 업사이클링 기술로 만든 친환경 고양이 모래 ETICAT+, 특수동물 베딩 REPTIQUETTE" />
-  <title data-i18n="meta.title">Alfred · ETICAT+ - 커피박 업사이클링 고양이 모래</title>
+  <meta name="description" data-i18n="meta.description" content="주식회사 알프래드 - 커피박에 가치를 더하다. 세계 최초 커피박 업사이클링 고양이 모래 ETICAT+, 특수동물 베딩 REPTIQUETTE." />
+  <title data-i18n="meta.title">Alfred — 커피박에 가치를 더하다</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="images/logo-clean.png" />
+  <link rel="icon" type="image/png" href="images/alfred-logo.png" />
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo">
-        <span class="logo-text">Alfred<span class="logo-dot">.</span></span>
+      <a href="#home" class="logo" aria-label="Alfred">
+        <img src="images/alfred-logo.png" alt="Alfred" />
       </a>
       <nav class="nav">
-        <a href="#about" data-i18n="nav.about">회사 소개</a>
+        <a href="#about" data-i18n="nav.about">브랜드</a>
         <a href="#story" data-i18n="nav.story">기술</a>
         <a href="#products" data-i18n="nav.products">제품</a>
         <a href="#trust" data-i18n="nav.trust">성과·인증</a>
@@ -28,7 +28,7 @@
       </nav>
       <div class="lang-toggle" role="group" aria-label="Language toggle">
         <button class="lang-btn active" data-lang="ko" aria-label="한국어">KO</button>
-        <span class="lang-divider">/</span>
+        <span class="lang-divider">·</span>
         <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
       </div>
       <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
@@ -37,80 +37,123 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero (45 / 55 split) -->
   <section id="home" class="hero">
-    <div class="hero-inner container">
-      <p class="hero-eyebrow" data-i18n="hero.eyebrow">AGRO-BYPRODUCT UPCYCLING</p>
-      <h1 class="hero-title">
-        <span data-i18n="hero.title1">Alfred</span>
-        <span class="hero-script" data-i18n="hero.title2">For You, For Your Cats, For Our Planet</span>
-      </h1>
-      <p class="hero-sub" data-i18n="hero.sub">농산물 부산물을 고부가가치 반려동물용품으로. 디카페인 복합공정 특허 기술로 만드는 친환경 펫케어 브랜드입니다.</p>
+    <div class="hero-left">
+      <span class="label-section hero-eyebrow" data-i18n="hero.eyebrow">ETICAT+ · 세계 최초 커피박 모래</span>
+      <span class="divider-peach" aria-hidden="true"></span>
+      <h1 class="heading-display hero-title" data-i18n="hero.title">커피박에<br />가치를 더하다</h1>
+      <p class="hero-sub" data-i18n="hero.sub">세계 최초 커피박 업사이클링 고양이 모래.<br />30분 내 암모니아 99.5% 제거, KCL 국가공인 인증.</p>
       <div class="hero-cta">
         <a href="#products" class="btn btn-primary" data-i18n="hero.cta1">제품 보기</a>
-        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">문의하기</a>
+        <a href="#about" class="btn btn-secondary" data-i18n="hero.cta2">브랜드 스토리</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge" data-i18n="hero.b1">세계최초</span>
+        <span class="badge badge-dark" data-i18n="hero.b2">KCL 인증</span>
+        <span class="badge badge-beige" data-i18n="hero.b3">친환경</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="images/eticat-lifestyle.png" alt="ETICAT+ lifestyle" />
+      <div class="hero-strip">FOR CAT, FOR YOU, FOR PLANET</div>
+    </div>
+  </section>
+
+  <!-- KPI strip -->
+  <section class="kpi-strip">
+    <div class="kpi-grid">
+      <div>
+        <div class="kpi-num">99.5%</div>
+        <div class="kpi-label" data-i18n="kpi.k1">암모니아 탈취력 (30분)</div>
+        <span class="badge" data-i18n="kpi.k1.tag">KCL 인증</span>
+      </div>
+      <div>
+        <div class="kpi-num accent">185%</div>
+        <div class="kpi-label" data-i18n="kpi.k2">3년 연평균 성장률</div>
+        <span class="badge badge-soft" data-i18n="kpi.k2.tag">2023 → 2025</span>
+      </div>
+      <div>
+        <div class="kpi-num">10.9억</div>
+        <div class="kpi-label" data-i18n="kpi.k3">2025 매출 (흑자 전환)</div>
+        <span class="badge badge-dark" data-i18n="kpi.k3.tag">완전 흑자</span>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="section section-light">
+  <section id="about" class="section section-cream">
     <div class="container two-col">
       <div class="col-text">
-        <p class="eyebrow" data-i18n="about.eyebrow">ABOUT ALFRED</p>
-        <h2 data-i18n="about.title">농산물 부산물을<br />고부가가치 반려동물용품으로</h2>
-        <p data-i18n="about.body1">주식회사 알프래드는 매년 국내에서 대량 폐기되는 커피박(연간 15만 톤)과 굴패각 등 농수산물 부산물을 고기능성 반려동물용품으로 업사이클링하는 농식품 융복합 기업입니다.</p>
-        <p data-i18n="about.body2">독자 개발한 디카페인 복합공정 특허 기술을 기반으로 2023년 'ETICAT+'를 출시한 이후 연평균 185%의 폭발적 성장을 이뤘으며, 2025년 매출 10.9억원·당기순이익 5.5억원을 달성하며 흑자 전환에 성공했습니다.</p>
-        <div class="stats">
-          <div class="stat"><span class="stat-num">185%</span><span class="stat-label" data-i18n="about.stat1">연평균 성장률 (2023→2025)</span></div>
-          <div class="stat"><span class="stat-num">10.9억</span><span class="stat-label" data-i18n="about.stat2">2025년 매출</span></div>
-          <div class="stat"><span class="stat-num">4건</span><span class="stat-label" data-i18n="about.stat3">특허 포트폴리오 (한국 3 + 미국 1)</span></div>
+        <span class="label-section" data-i18n="about.eyebrow">01. About Alfred</span>
+        <span class="divider-peach" aria-hidden="true"></span>
+        <h2 class="heading-section" data-i18n="about.title">농산물 부산물을<br />고부가가치 펫케어로</h2>
+        <p class="body-text" data-i18n="about.body1">주식회사 알프래드는 매년 국내에서 폐기되는 커피박 15만 톤과 굴패각 등 농수산물 부산물을 고기능성 반려동물용품으로 업사이클링하는 농식품 융복합 기업입니다.</p>
+        <p class="body-text" data-i18n="about.body2">독자 개발한 디카페인 복합공정 특허 기술을 기반으로 2023년 ETICAT+를 출시한 이후 연평균 185%의 성장을 기록, 2025년 매출 10.9억·당기순이익 5.5억 원으로 흑자 전환에 성공했습니다.</p>
+        <div class="stats-row">
+          <div class="stat-item"><div class="num">5</div><div class="lbl" data-i18n="about.stat1">특허 (KR 3 + US 1 + 1)</div></div>
+          <div class="stat-item"><div class="num">5</div><div class="lbl" data-i18n="about.stat2">미국 Healthy Spot 입점 매장</div></div>
+          <div class="stat-item"><div class="num">LA</div><div class="lbl" data-i18n="about.stat3">현지법인 Alfred Pets, Inc.</div></div>
         </div>
       </div>
       <div class="col-img">
-        <img src="images/eticat-hero.jpg" alt="ETICAT+ Cat Litter" loading="lazy" />
+        <img src="images/lifestyle-cover.jpg" alt="Alfred lifestyle" loading="lazy" />
       </div>
     </div>
   </section>
 
-  <!-- Tech / Story -->
+  <!-- Technology -->
   <section id="story" class="section section-dark">
     <div class="container">
-      <p class="eyebrow eyebrow-light" data-i18n="story.eyebrow">OUR TECHNOLOGY</p>
-      <h2 class="section-title-center" data-i18n="story.title">디카페인 복합공정<br />특허 기술</h2>
-      <div class="story-grid">
-        <div class="story-card">
-          <div class="story-num">01</div>
-          <h3 data-i18n="story.s1.title">150,000t</h3>
-          <p data-i18n="story.s1.body">매년 국내에서 폐기되는 커피박. 알프래드는 이를 발효·미생물 처리해 카페인 99%를 제거합니다.</p>
+      <div class="section-header">
+        <span class="label-section label-section-light" data-i18n="story.eyebrow">02. Our Technology</span>
+        <span class="divider-peach" aria-hidden="true"></span>
+        <h2 class="heading-section" data-i18n="story.title">디카페인 복합공정<br />특허 기술</h2>
+        <p class="section-lead body-text" data-i18n="story.lead">버려지던 커피박을 고기능성 펫케어 소재로 전환합니다. 발효·미생물 공정으로 카페인 99%를 제거해 안전하면서도, 표면의 미세 기공으로 탁월한 탈취력을 확보합니다.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-tab">STEP 01</div>
+          <div class="step-body">
+            <h3 data-i18n="story.s1.title">150,000t 의 가능성</h3>
+            <p data-i18n="story.s1.body">매년 국내에서 폐기되는 커피박. 발효·미생물 공정으로 카페인 99%를 제거해 펫 안전 소재로 재탄생시킵니다.</p>
+          </div>
         </div>
-        <div class="story-card">
-          <div class="story-num">02</div>
-          <h3 data-i18n="story.s2.title">특허 5건</h3>
-          <p data-i18n="story.s2.body">디카페인 복합공정 — 한국 3건 출원/등록 + 미국 1건. 핵심 공정 기술을 자체 보유.</p>
+        <div class="step-card">
+          <div class="step-tab">STEP 02</div>
+          <div class="step-body">
+            <h3 data-i18n="story.s2.title">특허 5건 보유</h3>
+            <p data-i18n="story.s2.body">디카페인 복합공정 — 한국 3건 출원/등록 + 미국 1건. 핵심 공정 기술은 100% 자체 보유합니다.</p>
+          </div>
         </div>
-        <div class="story-card">
-          <div class="story-num">03</div>
-          <h3 data-i18n="story.s3.title">글로벌 확장</h3>
-          <p data-i18n="story.s3.body">미국 LA 현지법인 Alfred Pets, Inc. 운영. Healthy Spot 5개 매장 입점, Amazon FBA 가동.</p>
+        <div class="step-card">
+          <div class="step-tab">STEP 03</div>
+          <div class="step-body">
+            <h3 data-i18n="story.s3.title">글로벌 검증 완료</h3>
+            <p data-i18n="story.s3.body">미국 LA 현지법인 Alfred Pets, Inc. 운영. Healthy Spot 5개 매장, Amazon FBA 가동 중.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Products -->
-  <section id="products" class="section section-light">
+  <section id="products" class="section section-white">
     <div class="container">
-      <p class="eyebrow" data-i18n="product.eyebrow">OUR PRODUCTS</p>
-      <h2 class="section-title-center" data-i18n="product.title">두 가지 핵심 제품,<br />동일한 기술, 확장하는 시장</h2>
+      <div class="section-header">
+        <span class="label-section" data-i18n="product.eyebrow">03. Our Products</span>
+        <span class="divider-peach" aria-hidden="true"></span>
+        <h2 class="heading-section" data-i18n="product.title">두 가지 핵심 제품,<br />하나의 기술</h2>
+        <p class="section-lead body-text" data-i18n="product.lead">커피박 한 가지 원료를 다양한 펫 라이프스타일로 확장합니다.</p>
+      </div>
 
-      <!-- Product 1: ETICAT+ -->
+      <!-- ETICAT+ -->
       <article class="product-block">
         <div class="product-block-img">
-          <img src="images/eticat-hero.jpg" alt="ETICAT+ Cat Litter Package" loading="lazy" />
+          <img src="images/eticat-product.png" alt="ETICAT+ Cat Litter Package" loading="lazy" />
         </div>
         <div class="product-block-body">
-          <p class="product-tag" data-i18n="product.p1.tag">고양이 배변 모래 · 주력 제품</p>
+          <p class="product-tag" data-i18n="product.p1.tag">CAT LITTER · MAIN PRODUCT</p>
           <h3 class="product-name" data-i18n="product.p1.name">ETICAT+</h3>
           <p class="product-subtitle" data-i18n="product.p1.subtitle">에티캣플러스 · Coffee-based Cat Litter</p>
           <ul class="feature-list">
@@ -118,37 +161,40 @@
               <span class="feat-num">01</span>
               <div>
                 <h4 data-i18n="product.p1.feat1.title">압도적 탈취력</h4>
-                <p data-i18n="product.p1.feat1.body">KCL 공인 암모니아 탈취율 99.5% (30분 이내), 기존 벤토나이트 대비 압도적 성능</p>
+                <p data-i18n="product.p1.feat1.body">KCL 공인 암모니아 탈취율 99.5% (30분 이내). 기존 벤토나이트 대비 압도적 성능.</p>
               </div>
             </li>
             <li>
               <span class="feat-num">02</span>
               <div>
                 <h4 data-i18n="product.p1.feat2.title">가볍고 친환경</h4>
-                <p data-i18n="product.p1.feat2.body">벤토나이트 무게의 2/5 수준, 100% 업사이클링 원료, 생분해 가능</p>
+                <p data-i18n="product.p1.feat2.body">벤토나이트 무게의 2/5 수준. 100% 업사이클링 원료, 생분해 가능.</p>
               </div>
             </li>
             <li>
               <span class="feat-num">03</span>
               <div>
                 <h4 data-i18n="product.p1.feat3.title">시장 검증 완료</h4>
-                <p data-i18n="product.p1.feat3.body">쿠팡·네이버 판매 중, 미국 Healthy Spot 5개 매장 입점, Amazon FBA 운영</p>
+                <p data-i18n="product.p1.feat3.body">쿠팡·네이버 판매 중, 미국 Healthy Spot 5개점 입점, Amazon FBA 운영.</p>
               </div>
             </li>
           </ul>
           <div class="product-stats">
-            <div><span class="stat-num">99.5%</span><span data-i18n="product.p1.stat1">KCL 탈취율</span></div>
-            <div><span class="stat-num">2/5</span><span data-i18n="product.p1.stat2">경량화</span></div>
-            <div><span class="stat-num">10.9억</span><span data-i18n="product.p1.stat3">2025 매출</span></div>
+            <div><span>99.5%</span><span data-i18n="product.p1.stat1">KCL 탈취</span></div>
+            <div><span>2/5</span><span data-i18n="product.p1.stat2">경량화</span></div>
+            <div><span>10.9억</span><span data-i18n="product.p1.stat3">2025 매출</span></div>
           </div>
-          <a href="#contact" class="btn btn-dark" data-i18n="product.cta">구매·도매 문의</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="product.cta">구매·도매 문의</a>
         </div>
       </article>
 
-      <!-- Product 2: REPTIQUETTE (dark variant) -->
+      <!-- REPTIQUETTE -->
       <article class="product-block product-block-dark">
+        <div class="product-block-img">
+          <img src="images/reptiquette-product.png" alt="REPTIQUETTE Bedding Package" loading="lazy" />
+        </div>
         <div class="product-block-body">
-          <p class="product-tag" data-i18n="product.p2.tag">특수동물 베딩 · 신규 사업 (2025)</p>
+          <p class="product-tag" data-i18n="product.p2.tag">EXOTIC PET BEDDING · NEW (2025)</p>
           <h3 class="product-name" data-i18n="product.p2.name">REPTIQUETTE</h3>
           <p class="product-subtitle" data-i18n="product.p2.subtitle">렙티켓 · 100% 천연 펠렛형 바닥재</p>
           <ul class="feature-list">
@@ -156,59 +202,63 @@
               <span class="feat-num">S</span>
               <div>
                 <h4 data-i18n="product.p2.feat1.title">Safety — 먹어도 안전</h4>
-                <p data-i18n="product.p2.feat1.body">카페인 99% 제거, 파충류 섭취 시 용해되어 장폐색 위험 제로</p>
+                <p data-i18n="product.p2.feat1.body">카페인 99% 제거. 파충류가 섭취해도 용해되어 장폐색 위험 제로.</p>
               </div>
             </li>
             <li>
               <span class="feat-num">F</span>
               <div>
                 <h4 data-i18n="product.p2.feat2.title">Function — 고기능 성능</h4>
-                <p data-i18n="product.p2.feat2.body">FITI 공인 탈취력 99.7%, 먼지 0.3%, 흡습력 53% 향상</p>
+                <p data-i18n="product.p2.feat2.body">FITI 공인 탈취 99.7%, 먼지 0.3%, 흡습력 53% 향상.</p>
               </div>
             </li>
             <li>
               <span class="feat-num">E</span>
               <div>
                 <h4 data-i18n="product.p2.feat3.title">Eco — 자원순환 가치</h4>
-                <p data-i18n="product.p2.feat3.body">커피박 200톤/년 + 굴패각 30톤/년 재활용, CO₂ 절감 효과</p>
+                <p data-i18n="product.p2.feat3.body">커피박 200t/년 + 굴패각 30t/년 재활용. 실질적 CO₂ 절감 효과.</p>
               </div>
             </li>
           </ul>
           <div class="product-stats">
-            <div><span class="stat-num">99.7%</span><span data-i18n="product.p2.stat1">FITI 탈취</span></div>
-            <div><span class="stat-num">0.3%</span><span data-i18n="product.p2.stat2">먼지 발생</span></div>
-            <div><span class="stat-num">TRL 7</span><span data-i18n="product.p2.stat3">기술 성숙도</span></div>
+            <div><span>99.7%</span><span data-i18n="product.p2.stat1">FITI 탈취</span></div>
+            <div><span>0.3%</span><span data-i18n="product.p2.stat2">먼지 발생</span></div>
+            <div><span>TRL 7</span><span data-i18n="product.p2.stat3">기술 성숙도</span></div>
           </div>
           <a href="#contact" class="btn btn-primary" data-i18n="product.cta">구매·도매 문의</a>
-        </div>
-        <div class="product-block-img">
-          <img src="images/repticat.png" alt="REPTIQUETTE Bedding Package" loading="lazy" />
         </div>
       </article>
     </div>
   </section>
 
   <!-- Trust -->
-  <section id="trust" class="section section-cream">
+  <section id="trust" class="section section-beige">
     <div class="container">
-      <p class="eyebrow" data-i18n="trust.eyebrow">PERFORMANCE & CERT</p>
-      <h2 class="section-title-center" data-i18n="trust.title">검증된 기술과<br />입증된 성과</h2>
-      <div class="trust-grid trust-grid-4">
+      <div class="section-header">
+        <span class="label-section" data-i18n="trust.eyebrow">04. Performance & Cert</span>
+        <span class="divider-peach" aria-hidden="true"></span>
+        <h2 class="heading-section" data-i18n="trust.title">검증된 기술과 입증된 성과</h2>
+      </div>
+      <div class="trust-grid">
         <div class="trust-card">
+          <span class="badge" data-i18n="trust.c1.badge">Cert</span>
           <h4 data-i18n="trust.c1.title">벤처기업 인증</h4>
           <p data-i18n="trust.c1.body">제20250625010025호 (~2028.05)</p>
         </div>
         <div class="trust-card">
+          <span class="badge badge-soft" data-i18n="trust.c2.badge">Sandbox</span>
           <h4 data-i18n="trust.c2.title">규제샌드박스 실증특례</h4>
           <p data-i18n="trust.c2.body">농식품 분야 실증특례 부여 기업</p>
         </div>
         <div class="trust-card">
+          <span class="badge badge-beige" data-i18n="trust.c3.badge">Program</span>
           <h4 data-i18n="trust.c3.title">TIPS 수행 기업</h4>
-          <p data-i18n="trust.c3.body">민간투자주도형 기술창업지원 프로그램 선정</p>
+          <p data-i18n="trust.c3.body">민간투자주도형 기술창업지원 선정</p>
         </div>
         <div class="trust-card">
+          <span class="badge badge-dark" data-i18n="trust.c4.badge">Partners</span>
           <h4 data-i18n="trust.c4.title">주요 파트너</h4>
-          <p data-i18n="trust.c4.body">SPC · 유한킴벌리 · 연세대기술지주 외 다수</p>
+          <p data-i18n="trust.c4.body">SPC · 유한킴벌리 · 연세대기술지주 외</p>
         </div>
       </div>
     </div>
@@ -216,12 +266,14 @@
 
   <!-- Contact -->
   <section id="contact" class="section section-dark">
-    <div class="container contact-inner">
-      <p class="eyebrow eyebrow-light" data-i18n="contact.eyebrow">CONTACT</p>
-      <h2 class="section-title-center" data-i18n="contact.title">함께하실 분을 찾습니다</h2>
-      <p class="contact-sub" data-i18n="contact.sub">제품 구매, B2B 도매, 해외 수출, ESG 제휴, 투자 문의 — 모두 환영합니다.</p>
-
-      <div class="contact-grid contact-grid-4">
+    <div class="container">
+      <div class="section-header">
+        <span class="label-section label-section-light" data-i18n="contact.eyebrow">05. Contact</span>
+        <span class="divider-peach" aria-hidden="true"></span>
+        <h2 class="heading-section" data-i18n="contact.title">함께하실 분을 찾습니다</h2>
+        <p class="section-lead body-text" data-i18n="contact.sub">제품 구매 · B2B 도매 · 해외 수출 · ESG 제휴 · 투자 — 모두 환영합니다.</p>
+      </div>
+      <div class="contact-grid">
         <div class="contact-card">
           <p class="contact-label" data-i18n="contact.tel">전화 (KR)</p>
           <a href="tel:+82-70-4320-9998" class="contact-value">070-4320-9998</a>
@@ -239,8 +291,9 @@
           <p class="contact-value" data-i18n="contact.usValue">Alfred Pets, Inc. · Los Angeles, CA</p>
         </div>
       </div>
-
-      <a href="mailto:info@alfred.pet" class="btn btn-primary btn-large" data-i18n="contact.cta">메일로 문의하기</a>
+      <div class="contact-cta-wrap">
+        <a href="mailto:info@alfred.pet" class="btn btn-primary btn-large" data-i18n="contact.cta">메일로 문의하기</a>
+      </div>
     </div>
   </section>
 
@@ -248,12 +301,13 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-text">Alfred<span class="logo-dot">.</span></span>
-        <p data-i18n="footer.tagline">For You, For Your Cats, For Our Planet</p>
+        <img src="images/alfred-logo.png" alt="Alfred" />
+        <p data-i18n="footer.tagline">FOR CAT, FOR YOU, FOR PLANET</p>
       </div>
       <div class="footer-info">
-        <p>&copy; 2020–<span id="year"></span> ALFRED. <span data-i18n="footer.rights">All rights reserved.</span></p>
-        <p data-i18n="footer.ceo">주식회사 알프래드 · 대표 권순우 · 사업자번호 873-88-01818</p>
+        <p>&copy; 2020–<span id="year"></span> ALFRED Co., Ltd. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.ceo">대표 권순우 · 사업자번호 873-88-01818</p>
+        <p><a href="mailto:info@alfred.pet">info@alfred.pet</a> · 070-4320-9998</p>
       </div>
     </div>
   </footer>
