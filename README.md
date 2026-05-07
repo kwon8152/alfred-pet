@@ -1,6 +1,8 @@
 # Alfred 공식 홈페이지
 
-알프래드(Alfred) 브랜드 공식 사이트 — 정적 HTML/CSS/JS, GitHub Pages 무료 호스팅용.
+주식회사 알프래드 공식 사이트 — 정적 HTML/CSS/JS, GitHub Pages 무료 호스팅.
+
+주요 제품: **ETICAT+** (커피박 업사이클링 고양이 모래) · **REPTICAT** (특수동물 헬스케어 베딩)
 
 ## 구조
 
