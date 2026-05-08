@@ -4,3 +4,10 @@ Thumbs.db
 .vscode/
 .idea/
 node_modules/
+
+# Internal tooling — not part of public site
+.claude/
+baseline-before-renewal/
+cafe24-api/
+cafe24-content-update/
+smartstore-data/
