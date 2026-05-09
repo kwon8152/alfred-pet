@@ -104,6 +104,21 @@ git push -u origin main
 3. **Settings → Pages → Custom domain**에 `alfred.pet` 입력 → Save
 4. **Enforce HTTPS** 체크 (DNS 전파 후 1시간 내 가능)
 
+## 연락처 폼 활성화 (Formspree)
+
+문의 폼은 Formspree 무료 플랜으로 동작합니다 (월 50건 제출 무료).
+
+1. https://formspree.io 가입 → **New Form** 생성
+2. 알림 받을 이메일 입력 (예: `info@alfred.pet`) → 이메일 인증
+3. 발급된 폼 ID 복사 (예: `xrgwabcd`)
+4. `index.html` 에서 아래 부분의 `REPLACE_WITH_FORM_ID` 를 폼 ID로 교체:
+   ```html
+   <form ... action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+   ```
+5. 커밋 & 푸시 → 자동 배포 완료
+
+설정 전에는 폼 제출 시 사용자에게 "메일로 문의해주세요" 안내가 표시됩니다.
+
 ## 콘텐츠 수정 방법
 
 | 수정하고 싶은 것 | 파일 |

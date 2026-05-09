@@ -28,7 +28,7 @@ const translations = {
     "story.title": "디카페인 복합공정<br />특허 기술",
     "story.s1.title": "150,000t",
     "story.s1.body": "매년 국내에서 폐기되는 커피박. 알프래드는 이를 발효·미생물 처리해 카페인 99%를 제거합니다.",
-    "story.s2.title": "특허 5건",
+    "story.s2.title": "특허 4건",
     "story.s2.body": "디카페인 복합공정 — 한국 3건 출원/등록 + 미국 1건. 핵심 공정 기술을 자체 보유.",
     "story.s3.title": "글로벌 확장",
     "story.s3.body": "미국 LA 현지법인 Alfred Pets, Inc. 운영. Healthy Spot 5개 매장 입점, Amazon FBA 가동.",
@@ -86,6 +86,22 @@ const translations = {
     "contact.usValue": "Alfred Pets, Inc. · Los Angeles, CA",
     "contact.cta": "메일로 문의하기",
 
+    "form.name": "이름 / 회사",
+    "form.email": "이메일",
+    "form.subject": "문의 유형",
+    "form.subject.purchase": "제품 구매",
+    "form.subject.wholesale": "B2B / 도매",
+    "form.subject.export": "해외 수출",
+    "form.subject.esg": "ESG / 제휴",
+    "form.subject.invest": "투자",
+    "form.subject.other": "기타",
+    "form.message": "내용",
+    "form.submit": "문의 보내기",
+    "form.sending": "전송 중...",
+    "form.success": "문의가 정상적으로 접수되었습니다. 빠르게 회신드리겠습니다.",
+    "form.error": "전송 실패. 잠시 후 다시 시도하시거나 메일로 문의 부탁드립니다.",
+    "form.fallback": "또는 메일로 직접 문의하세요",
+
     "footer.tagline": "For You, For Your Cats, For Our Planet",
     "footer.rights": "All rights reserved.",
     "footer.ceo": "주식회사 알프래드 · 대표 권순우 · 사업자번호 873-88-01818"
@@ -119,7 +135,7 @@ const translations = {
     "story.title": "Patented Decaffeination<br />Composite Process",
     "story.s1.title": "150,000 t",
     "story.s1.body": "Spent coffee grounds discarded in Korea each year. We ferment and microbially process them, removing 99% of caffeine.",
-    "story.s2.title": "5 Patents",
+    "story.s2.title": "4 Patents",
     "story.s2.body": "Decaffeination composite process — 3 in Korea + 1 in the US. Core manufacturing tech owned in-house.",
     "story.s3.title": "Going Global",
     "story.s3.body": "Alfred Pets, Inc. operating in Los Angeles. Listed in 5 Healthy Spot stores, running on Amazon FBA.",
@@ -177,6 +193,22 @@ const translations = {
     "contact.usValue": "Alfred Pets, Inc. · Los Angeles, CA",
     "contact.cta": "Email Us",
 
+    "form.name": "Name / Company",
+    "form.email": "Email",
+    "form.subject": "Inquiry Type",
+    "form.subject.purchase": "Product Purchase",
+    "form.subject.wholesale": "B2B / Wholesale",
+    "form.subject.export": "Export",
+    "form.subject.esg": "ESG / Partnership",
+    "form.subject.invest": "Investment",
+    "form.subject.other": "Other",
+    "form.message": "Message",
+    "form.submit": "Send Inquiry",
+    "form.sending": "Sending...",
+    "form.success": "Thanks — your inquiry has been received. We'll get back to you shortly.",
+    "form.error": "Send failed. Please try again or email us directly.",
+    "form.fallback": "Or email us directly",
+
     "footer.tagline": "For You, For Your Cats, For Our Planet",
     "footer.rights": "All rights reserved.",
     "footer.ceo": "Alfred Co., Ltd. · CEO Soonwoo Kwon · Biz Reg. 873-88-01818"
@@ -213,6 +245,9 @@ const I18n = {
         el.innerHTML = val;
       }
     });
+
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute('content', lang === 'en' ? 'en_US' : 'ko_KR');
 
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
