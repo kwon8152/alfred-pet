@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "로컬 서버 실행 (Python)",
+      "type": "shell",
+      "command": "python3 -m http.server 8000",
+      "windows": {
+        "command": "python -m http.server 8000"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "http://localhost:8000 에서 사이트를 미리봅니다. 종료하려면 터미널에서 Ctrl+C 를 누르세요."
+    },
+    {
+      "label": "로컬 서버 실행 (Node)",
+      "type": "shell",
+      "command": "npx --yes serve -l 8000 .",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "detail": "Node.js 기반 정적 서버. http://localhost:8000 에서 미리봅니다."
+    }
+  ]
+}

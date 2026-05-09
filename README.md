@@ -34,6 +34,47 @@ npx serve website
 
 또는 그냥 `index.html` 파일을 더블클릭해도 작동합니다 (한/영 토글 포함).
 
+## 내 컴퓨터 VS Code에서 이어서 작업하기 (처음 한 번만)
+
+### 1. 필요한 프로그램 설치
+1. **Git** — https://git-scm.com/downloads 에서 다운로드 후 설치 (모든 옵션 기본값)
+2. **VS Code** — https://code.visualstudio.com 에서 다운로드 후 설치
+3. **Python** (선택) — https://python.org 에서 설치 (로컬 미리보기용, "Add to PATH" 체크)
+
+### 2. 저장소 내려받기 (클론)
+바탕화면 등 원하는 폴더에서 마우스 우클릭 → "Git Bash Here" (또는 터미널) 후:
+```bash
+git clone https://github.com/kwon8152/alfred-pet.git
+cd alfred-pet
+code .
+```
+마지막 `code .` 명령으로 VS Code가 이 프로젝트 폴더를 엽니다.
+
+### 3. 추천 확장 설치
+프로젝트를 열면 VS Code 우측 하단에 **"이 저장소가 추천 확장 설치를 권장합니다"** 알림이 뜹니다 → **Install** 클릭.
+주요 확장:
+- **Live Server** — `index.html` 우클릭 → "Open with Live Server" 하면 저장 시 브라우저 자동 새로고침
+- **EditorConfig** — 들여쓰기 규칙 자동 적용
+- **Prettier** — 코드 정렬 도구
+- **Code Spell Checker** — 영문 오타 검사
+
+### 4. 로컬 미리보기
+방법 ①: `index.html` 우클릭 → **Open with Live Server** (Live Server 확장 설치 후)
+방법 ②: `Ctrl+Shift+B` → "로컬 서버 실행 (Python)" 선택 → http://localhost:8000
+
+### 5. 작업한 내용 GitHub에 올리기
+VS Code 좌측 **소스 제어** 아이콘(가지 모양):
+1. 변경한 파일 옆 `+` 클릭 (스테이지)
+2. 위 입력칸에 변경 설명 작성 → **Commit** 버튼
+3. **Sync Changes** (또는 ⋯ 메뉴 → Push) 클릭
+
+### 작업 중인 브랜치 가져오기
+이 프로젝트의 진행 중인 브랜치를 받으려면:
+```bash
+git fetch origin
+git checkout claude/setup-vscode-environment-JUozi
+```
+
 ## 한/영 토글
 
 - 헤더 우측 `KO / EN` 버튼 클릭 → 즉시 전환
