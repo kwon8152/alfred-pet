@@ -272,6 +272,8 @@ h1, h2, h3, h4 {
   color: var(--gold); font-weight: 700;
   margin: 0 0 18px;
   padding: 6px 14px;
+  /* Compensate for trailing letter-spacing after last char — visually centers the text inside the pill */
+  text-indent: 0.32em;
   border-radius: 999px;
   background: rgba(201,154,75,0.1);
 }
