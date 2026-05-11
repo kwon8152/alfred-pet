@@ -341,7 +341,7 @@ h1, h2, h3, h4 {
   background: var(--gold);
   margin-left: 4px;
 }
-.bento-quote p {
+.bento-quote p:not(.eyebrow) {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: clamp(20px, 2.4vw, 26px);
