@@ -23,6 +23,7 @@ const translations = {
     "about.stat1": "연평균 성장률 (2023→2025)",
     "about.stat2": "2025년 매출",
     "about.stat3": "특허 포트폴리오 (한국 3 + 미국 1)",
+    "about.quote": "\"버려지는 부산물에 기술과 가치를 더해, 사람·반려동물·지구가 모두 건강한 순환을 만듭니다.\"",
 
     "story.eyebrow": "OUR TECHNOLOGY",
     "story.title": "디카페인 복합공정<br />특허 기술",
@@ -130,6 +131,7 @@ const translations = {
     "about.stat1": "CAGR (2023→2025)",
     "about.stat2": "2025 Revenue",
     "about.stat3": "Patent Portfolio (KR 3 + US 1)",
+    "about.quote": "\"We add technology and value to discarded by-products — building a healthy loop for people, pets, and the planet.\"",
 
     "story.eyebrow": "OUR TECHNOLOGY",
     "story.title": "Patented Decaffeination<br />Composite Process",

@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Footer year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Mobile nav
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
   if (menuToggle && nav) {
@@ -17,15 +19,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.section').forEach(s => observer.observe(s));
+  // Header scroll state
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
 
+  // Scroll reveal — observe both .section and any .reveal element
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in-view'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal, .section').forEach(el => io.observe(el));
+  }
+
+  // Subtle magnetic effect on primary CTAs (desktop only)
+  if (!prefersReduced && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const x = e.clientX - r.left - r.width / 2;
+        const y = e.clientY - r.top - r.height / 2;
+        btn.style.transform = `translate(${x * 0.08}px, ${y * 0.12}px)`;
+      });
+      btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+    });
+  }
+
+  // Contact form (Formspree) — graceful fallback if form id not configured
   const form = document.querySelector('.contact-form');
   if (form) {
     const status = form.querySelector('.form-status');
