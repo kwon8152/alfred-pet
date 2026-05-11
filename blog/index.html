@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n="blog.metaDescription" content="알프래드 저널 — 커피박 업사이클링과 친환경 펫케어 브랜드 알프래드의 기록" />
+  <meta name="theme-color" content="#3B2A1E" />
+  <link rel="canonical" href="https://alfred.pet/blog/" />
+  <title data-i18n="blog.metaTitle">Journal — Alfred</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alfred" />
+  <meta property="og:url" content="https://alfred.pet/blog/" />
+  <meta property="og:title" data-i18n="blog.metaTitle" content="Journal — Alfred" />
+  <meta property="og:description" data-i18n="blog.metaDescription" content="알프래드 저널 — 커피박 업사이클링과 친환경 펫케어 브랜드 알프래드의 기록" />
+  <meta property="og:image" content="https://alfred.pet/images/eticat-hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" data-i18n="blog.metaTitle" content="Journal — Alfred" />
+  <meta name="twitter:description" data-i18n="blog.metaDescription" content="알프래드 저널 — 커피박 업사이클링과 친환경 펫케어 브랜드 알프래드의 기록" />
+  <meta name="twitter:image" content="https://alfred.pet/images/eticat-hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo-clean.png" />
+</head>
+<body class="page-blog">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-text">Alfred<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/#about" data-i18n="nav.about">회사 소개</a>
+        <a href="/#story" data-i18n="nav.story">기술</a>
+        <a href="/#products" data-i18n="nav.products">제품</a>
+        <a href="/#trust" data-i18n="nav.trust">성과·인증</a>
+        <a href="/blog/" class="nav-current" data-i18n="nav.blog">저널</a>
+        <a href="/#contact" data-i18n="nav.contact">문의</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button class="lang-btn active" data-lang="ko" aria-label="한국어">KO</button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="blog.eyebrow">JOURNAL</p>
+        <h1 class="blog-hero-title reveal reveal-delay-1" data-i18n="blog.title">알프래드의 기록</h1>
+        <p class="blog-hero-sub reveal reveal-delay-2" data-i18n="blog.sub">커피박 한 줌이 모래가 되기까지, 그 사이의 모든 이야기. 자랑보다 솔직함을 먼저 적습니다.</p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div id="blog-list" class="post-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">Alfred<span class="logo-dot">.</span></span>
+        <p data-i18n="footer.tagline">For You, For Your Cats, For Our Planet</p>
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2020–<span id="year"></span> ALFRED. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.ceo">주식회사 알프래드 · 대표 권순우 · 사업자번호 873-88-01818</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/blog.js"></script>
+</body>
+</html>
