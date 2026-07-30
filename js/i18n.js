@@ -89,7 +89,7 @@ const translations = {
     "trust.c3.title": "TIPS 수행 기업",
     "trust.c3.body": "민간투자주도형 기술창업지원 프로그램 선정",
     "trust.c4.title": "주요 파트너",
-    "trust.c4.body": "SPC · 유한킴벌리 · 연세대기술지주 외 다수",
+    "trust.c4.body": "SPC · 연세대기술지주 외 다수",
 
     "contact.eyebrow": "CONTACT",
     "contact.title": "함께하실 분을 찾습니다",
@@ -212,7 +212,7 @@ const translations = {
     "trust.c3.title": "TIPS Program",
     "trust.c3.body": "Selected by Korea's TIPS — private-investment-led startup program",
     "trust.c4.title": "Key Partners",
-    "trust.c4.body": "SPC · Yuhan-Kimberly · Yonsei Tech Holdings, and more",
+    "trust.c4.body": "SPC · Yonsei Tech Holdings, and more",
 
     "contact.eyebrow": "CONTACT",
     "contact.title": "We'd love to hear from you",
