@@ -11,3 +11,13 @@ baseline-before-renewal/
 cafe24-api/
 cafe24-content-update/
 smartstore-data/
+
+# 내부 작업물 — 공개 저장소에 올리지 않는다 (2026-07-28 추가)
+#   이 저장소는 PUBLIC 이다. 아래는 공개 사이트 구성물이 아니라
+#   내부 기획·테스트·경쟁 조사 산출물이므로 추적하지 않는다.
+dns-records-backup.md
+ecommerce-copy/
+screenshots/
+상세페이지_벤치마크_코퍼스/
+상세페이지_테스트_*/
+떠리몰_입점_*/
